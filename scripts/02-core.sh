@@ -13,3 +13,4 @@ quarkus create app org.easyintegration.blockchain:core \
 cd core/src/main/webapp
 npx create-react-app . --template typescript
 npm install @patternfly/patternfly @patternfly/react-core --save
+npm run quarkus

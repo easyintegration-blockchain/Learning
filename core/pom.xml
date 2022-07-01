@@ -154,7 +154,7 @@
               <goal>npm</goal>
             </goals>
             <configuration>
-              <arguments>run prod</arguments>
+              <arguments>run quarkus</arguments>
             </configuration>
           </execution>
         </executions>

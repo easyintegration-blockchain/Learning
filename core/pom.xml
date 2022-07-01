@@ -154,7 +154,7 @@
               <goal>npm</goal>
             </goals>
             <configuration>
-              <arguments>run quarkus</arguments>
+              <arguments>run quarkus-webapp</arguments>
             </configuration>
           </execution>
         </executions>

@@ -1,5 +1,6 @@
 #!/bin/bash
 
+## Java /home/gitpod/.sdkman/candidates/java/11.0.15.fx-zulu
 ## Install 
 sudo apt-get install dos2unix -y
 

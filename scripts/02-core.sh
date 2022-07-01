@@ -9,6 +9,10 @@ quarkus create app org.easyintegration.blockchain:core \
 --extension=camel-quarkus-yaml-dsl \
 --extension=quarkus-resteasy-reactive
 
+## Core Quarkus Project
+cd core
+quarkus dev
+
 ## Core Web Project
 cd core/src/main/webapp
 npx create-react-app . --template typescript

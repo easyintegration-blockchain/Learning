@@ -11,3 +11,5 @@ quarkus --version
 ## Camel Installation
 jbang app install camel@apache/camel
 camel --version
+# camel export --runtime=quarkus
+export runtime=quarkus

@@ -5,6 +5,8 @@ import javax.enterprise.event.Observes;
 import io.quarkus.runtime.ShutdownEvent;
 import io.quarkus.runtime.StartupEvent;
 
+// Running on-startup https://quarkus.io/guides/lifecycle
+
 @ApplicationScoped
 public class Main{
     void onStart(@Observes StartupEvent ev) {

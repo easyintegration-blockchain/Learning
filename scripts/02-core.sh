@@ -12,3 +12,4 @@ quarkus create app org.easyintegration.blockchain:core \
 cd core/src/main/webapp
 npx create-react-app . --template typescript
 npm install @patternfly/patternfly --save
+quarkus -Dui.dev quarkus:dev

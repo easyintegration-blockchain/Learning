@@ -42,3 +42,4 @@ nb-configuration.xml
 mvnw
 mvnw.cmd
 src/main/docker/*
+README.md

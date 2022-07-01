@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## Install 
+sudo apt-get install dos2unix -y
+
 ## Jbang Installation
 curl -Ls https://sh.jbang.dev | bash -s - app setup
 jbang --version

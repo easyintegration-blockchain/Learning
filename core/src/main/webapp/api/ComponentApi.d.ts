@@ -1,0 +1,20 @@
+import { Component, ComponentProperty } from "../model/ComponentModels";
+export declare const Components: Component[];
+export declare const ComponentApi: {
+    jsonToComponent: (json: string) => Component;
+    saveComponents: (jsons: string[], clean?: boolean) => void;
+    saveComponent: (json: string) => void;
+    getComponents: () => Component[];
+    findByName: (name: string) => Component | undefined;
+    getComponentNameFromUri: (uri: string) => string | undefined;
+    getComponentTitleFromUri: (uri: string) => string | undefined;
+    getComponentDescriptionFromUri: (uri: string) => string | undefined;
+    getUriParts: (uri: string) => Map<string, string>;
+    parseSyntax: (syntax: string) => string[];
+    getSyntaxSeparators: (syntax: string) => string[];
+    parseUri: (uri?: string | undefined) => string[];
+    getUriSeparators: (uri: string) => string[];
+    getPathParameterValue: (uri: string, pathParameter: string) => string | undefined;
+    buildComponentUri: (uri: string, pathParameter: string, pathParameterValue: string) => string | undefined;
+    getComponentProperties: (componentName: string, type: 'consumer' | 'producer') => ComponentProperty[];
+};

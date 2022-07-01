@@ -39,6 +39,7 @@ nb-configuration.xml
 .env
 
 # Additional
+.mvn
 mvnw
 mvnw.cmd
 src/main/docker/

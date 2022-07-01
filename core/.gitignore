@@ -1,5 +1,4 @@
 #Maven
-src/main/docker/
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -38,3 +37,8 @@ nb-configuration.xml
 
 # Local environment
 .env
+
+# Additional
+mvnw
+mvnw.cmd
+src/main/docker/*

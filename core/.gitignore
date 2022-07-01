@@ -41,5 +41,6 @@ nb-configuration.xml
 # Additional
 mvnw
 mvnw.cmd
-src/main/docker/*
+src/main/docker/
 README.md
+.dockerignore

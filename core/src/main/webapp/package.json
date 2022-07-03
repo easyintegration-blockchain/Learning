@@ -27,7 +27,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "quarkus-webapp": "react-scripts build --dest && mv build/* ../resources/META-INF/resources"
+    "quarkus-webapp": "react-scripts build --dest && rsync -a build/* ../resources/META-INF/resources"
   },
   "eslintConfig": {
     "extends": [

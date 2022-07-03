@@ -7,8 +7,10 @@ interface Props {
 interface State {
 }
 
-export class Designer extends React.Component<Props, State> {
+export class DesignerPage extends React.Component<Props, State> {
     render() {
         return(<h1>Designer</h1>);
     }
 }
+
+export default DesignerPage;

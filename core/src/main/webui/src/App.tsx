@@ -29,8 +29,25 @@ class App extends React.Component<Props, State>{
     yaml: ''
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     console.log("*** KameletApi & ComponentApi Loaded ***");
+    
+    const componentsResponse = await fetch('data/components.json');
+    const componentsData = await componentsResponse.json();
+    componentsData.forEach((text: string) => {
+      fetch("components/" + text)
+                .then((r) => r.text())
+                .then(value => ComponentApi.saveComponent(value));
+    });
+
+    const kameletsResponse = await fetch('data/kamelets.json');
+    const kameletsData = await kameletsResponse.json();
+    kameletsData.forEach((text: string) => {
+      fetch("kamelets/" + text)
+                .then((r) => r.text())
+                .then(value => KameletApi.saveKamelet(value));
+    });
+
   }
 
   public render() {

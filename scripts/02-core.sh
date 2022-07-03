@@ -8,6 +8,7 @@ quarkus create app org.easyintegration.blockchain:core \
 --extension=camel-quarkus-kamelet \
 --extension=camel-quarkus-yaml-dsl \
 --extension=quarkus-quinoa \
+--extension=resteasy-reactive-jackson \
 --extension=quarkus-resteasy-reactive
 
 quarkus extension add quarkus-quinoa

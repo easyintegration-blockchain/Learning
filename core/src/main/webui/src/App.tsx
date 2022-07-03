@@ -8,6 +8,9 @@ import {KameletsPage} from "./kamelets/KameletsPage";
 import {ComponentsPage} from "./components/ComponentsPage";
 import {EipPage} from "./eip/EipPage";
 import {BuilderPage} from "./builder/BuilderPage";
+import {KameletApi} from "./lib/api/KameletApi";
+import {ComponentApi} from "./lib/api/ComponentApi";
+import {ProjectModel, StepStatus} from "./lib/model/ProjectModel";
 
 interface Props {
   page: "designer" | "kamelets" | "components" | "eip" | "builder";
@@ -25,6 +28,11 @@ class App extends React.Component<Props, State>{
     key: '',
     yaml: ''
   }
+
+  componentDidMount() {
+    console.log("*** KameletApi & ComponentApi Loaded ***");
+  }
+
   public render() {
     return( <Page className="easy">
               {this.props.page === "designer" &&  <DesignerPage />}

@@ -21,3 +21,13 @@ quarkus dev
 cd core/src/main/webapp
 npx create-react-app . --template typescript
 npm install @patternfly/patternfly @patternfly/react-core @patternfly/react-table react-router-dom uuid rxjs axios dagre @types/js-yaml @reactour/tour @types/uuid --save
+
+## Building Karvana App
+mvn -f karavan-generator clean package
+cd karavan-core && npm install 
+npm run build
+cd ..
+cd karavan-designer/ && npm run start 
+cd ..
+mvn -f karavan-app -DskipTest -Dquarkus.container-image.build=false -Dquarkus.container-image.push=false
+java -jar karavan-app/target/karavan-0.0.16-runner.jar

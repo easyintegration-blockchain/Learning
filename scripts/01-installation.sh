@@ -10,9 +10,9 @@ curl -Ls https://sh.jbang.dev | bash -s - app setup
 jbang --version
 
 ## Quarkus Installation
-jbang app install quarkus@quarkusio
+jbang app install quarkus@quarkusio <<< "2"
 quarkus --version
 
 ## Camel Installation
-jbang app install camel@apache/camel
+jbang app install camel@apache/camel <<< "3"
 camel --version

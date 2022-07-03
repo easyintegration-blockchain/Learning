@@ -30,7 +30,7 @@ class App extends React.Component<Props, State>{
   }
 
   async componentDidMount() {
-    console.log("*** KameletApi & ComponentApi Loaded ***");
+    console.log("*** Loading KameletApi & ComponentApi ***");
     
     const componentsResponse = await fetch('data/components.json');
     const componentsData = await componentsResponse.json();

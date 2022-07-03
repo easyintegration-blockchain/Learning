@@ -12,12 +12,11 @@ quarkus create app org.easyintegration.blockchain:core \
 
 quarkus extension add quarkus-quinoa
 
-## Core Quarkus Project
+## Core Quarkus Project 
 cd core
 quarkus dev
 
-## Core Web Project
+## Core Web Project - https://quarkiverse.github.io/quarkiverse-docs/quarkus-quinoa/dev/
 cd core/src/main/webapp
 npx create-react-app . --template typescript
 npm install @patternfly/patternfly @patternfly/react-core @patternfly/react-table react-router-dom uuid rxjs axios dagre @types/js-yaml @reactour/tour @types/uuid --save
-npm run quarkus-webapp

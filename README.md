@@ -6,3 +6,5 @@
 ## Projects
 ### core
 - This module contains all the details required to create a camel route using WebUI.
+### file-generator
+- This module used to generate `core/src/main/data folder` data
